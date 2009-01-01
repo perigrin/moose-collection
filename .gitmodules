@@ -1,0 +1,20 @@
+[submodule "Class::MOP"]
+        path = Class-MOP
+        url = git://jules.scsys.co.uk/gitmo/Class-MOP.git
+
+[submodule "Moose"]
+        path = Moose
+        url = git://jules.scsys.co.uk/gitmo/Moose.git
+
+[submodule "Mouse"]
+        path = Mouse
+        url = git://jules.scsys.co.uk/gitmo/Mouse.git
+
+[submodule "MooseX::Role::Parameterized"]
+        path = MooseX-Role-Parameterized
+        url = git://jules.scsys.co.uk/gitmo/MooseX-Role-Parameterized.git
+
+[submodule "MooseX::Singleton"]
+        path = MooseX-Singleton
+        url = git://jules.scsys.co.uk/gitmo/MooseX-Singleton.git
+
