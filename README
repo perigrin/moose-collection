@@ -1,0 +1,42 @@
+Moose Collection
+~~~~~~~~~~~~~~~~
+This project is a git 'superproject' for Free Moose components
+available via git.
+
+Until it is known that git's submodule support handles it well,
+projects will never be renamed/moved.
+
+In general there will not be a new superproject commit for every
+submodule commit; if you want the very latest from each of the
+submodules you will have to pull them individually.  However, the
+following branches will be defined;
+
+  - stable - representing only CPAN released versions of modules
+  - dev - representing CPAN development releases
+  - next - collecting 'master'-quality branches from sub-projects
+           where available, or latest CPAN release where not.
+  - pu - collecting 'trunk'-quality branches
+
+'next' and 'pu' will be subject to automatic update, probably on an
+hourly or thereabouts basis.  'stable' and 'dev' will be updated as
+new already added CPAN releases are noticed, or as signed tags in
+subprojects are noticed.
+
+Instructions and helper scripts will follow, but for now you'll have
+to spend the few minutes it takes to learn how git submodules work;
+note if you don't understand the DESCRIPTION part of a recent
+git-submodule(1), I recommend first the git user manual section on
+"git concepts".  eg
+http://www.kernel.org/pub/software/scm/git/docs/user-manual.html#git-concepts
+
+If you would like your own free Moose project considered for
+inclusion, please send through a patch to this superproject which adds
+it.  You can send them to the Moose user's list;
+
+    The mailing list is moose@perl.org. You must be
+    subscribed to send a message. To subscribe, send an
+    empty message to moose-subscribe@perl.org
+
+Enjoy!
+Sam Vilain, evil Moose Conspirator, wing commander of sideline sniping
+squadron.
