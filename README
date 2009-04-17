@@ -13,14 +13,20 @@ following branches will be defined;
 
   - stable - representing only CPAN released versions of modules
   - dev - representing CPAN development releases
-  - next - collecting 'master'-quality branches from sub-projects
-           where available, or latest CPAN release where not.
-  - pu - collecting 'trunk'-quality branches
+  - master - collecting 'master'-quality branches from sub-projects
+           where available, or latest stable CPAN release where not.
+  - next - collection 'next' branches - ie, branches which are heading
+           towards being 'dev' releases.
+  - pu - collecting 'trunk'-quality branches.
 
-'next' and 'pu' will be subject to automatic update, probably on an
-hourly or thereabouts basis.  'stable' and 'dev' will be updated as
-new already added CPAN releases are noticed, or as signed tags in
-subprojects are noticed.
+'master', 'next' and 'pu' will be subject to time-based update,
+probably on an hourly or thereabouts basis.  'stable' and 'dev' will
+be updated as new already added CPAN releases are noticed, or as
+conformingly named signed tags in subprojects are noticed.
+
+To make things sane I'll be trying to smoketest branches before
+updating them, except 'pu' which will just be whatever the 'latest and
+greatest!!1!1' is upstream.
 
 Instructions and helper scripts will follow, but for now you'll have
 to spend the few minutes it takes to learn how git submodules work;
